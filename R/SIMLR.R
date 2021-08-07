@@ -240,14 +240,14 @@
     cat("Performing Kmeans.\n")
     y = kmeans(F_last,c,nstart=200)
     
-    ydata = tsne(S)
+    # ydata = tsne(S)
     
     # create the structure with the results
     results = list()
     results[["y"]] = y
     results[["S"]] = S
     results[["F"]] = F_last
-    results[["ydata"]] = ydata
+    # results[["ydata"]] = ydata
     results[["alphaK"]] = alphaK
     results[["execution.time"]] = execution.time
     results[["converge"]] = converge
